@@ -23,7 +23,7 @@ body{
 }
 
 img #author{
-    box-shadow: black;
+    box-shadow: 0px  0px 10px black;
     /* transform: translate(-50%, -50%); */
 }
 
@@ -218,7 +218,6 @@ footer img{
 
 
 
-
 /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's 
 font size versus fixed with pixels.*/
 @media screen and (max-width: 640px) {
@@ -252,10 +251,6 @@ font size versus fixed with pixels.*/
         display: none;
     }
 
-    nav{
-        background-color: none;
-    }
-
     #author{
         width: 70px;
         height: 100px;
@@ -263,7 +258,6 @@ font size versus fixed with pixels.*/
     }
     header{
         padding: 5px;
-    
     }
 
     h1{
