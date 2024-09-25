@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+#menu {
+    display: none;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+}
+
+#author{
+    width: 100px;
+    height: 130px;
+    margin-right: 40px;
+    box-shadow: 0px 0px 20px 5px;
+}
+
+img #author{
+    box-shadow: black;
+    /* transform: translate(-50%, -50%); */
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #164e70;
+    padding: 20px;
+} 
+
+h1{
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+nav ul{
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+nav ul li{
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav a:hover, nav a:active{
+    color: #EDE627;
+}
+
+.active{
+    color: #EDE627;
+}
+
+.card{
+    background-color: rgb(224, 235, 246);
+    border-radius:5px;
+    overflow: hidden ;
+    box-shadow: 0px  0px 10px black; 
+}
+#course-work{
+    grid-column: span 2;
+}
+#course-work ul{
+    margin-top: 20px;
+}
+
+#course-work ul li{
+    padding: 5px;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    padding: 20px 30px 5px;
+    /* object-fit: cover; */
+}
+
+figcaption{
+    text-align: center;
+    margin: 5px 20px 20px;
+    font-size: 1rem;
+}
+
+h2{
+    text-align: center;
+    background-color: #164e70;
+    padding: 10px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+main{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+
+
+}
+
+#course-work, #state{
+    height: auto;
+}
+
+#courses{
+    grid-column: span 3;
+}
+
+.tags{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+#head-tags{
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-shrink: 1;
+}
+
+#head-tags button{
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px 50px;
+    margin: 8px 3px;
+    font-weight: 600;
+}
+
+#head-tags button:hover{
+    background-color: #EDE627;
+    color: black;
+    border: 1px solid rgb(130, 130, 130);
+}
+
+#sub-tags{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 10px 10px;
+}
+
+#sub-tags .course-card.completed{
+    background-color: #005a27;
+    border-color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+} 
+
+#sub-tags .course-card.not-completed{
+    background-color: #b40606;
+    border-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+} 
+
+/* #sub-tags a:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(130, 130, 130);
+} */
+
+footer{
+    background-color: #164e70;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer #span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #span > *{
+    margin: 5px 10px;
+}
+footer img{
+    width: 50px;
+    height: 30px;
+    
+}
+
+#lastModified{
+    font-weight: lighter;
+    color: #EDE627;
+}
+
+#total-credits {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's 
+font size versus fixed with pixels.*/
+@media screen and (max-width: 640px) {
+
+    /* Mobile View ***************/
+    #menu {
+    	display: flex;
+    	font-size: 3rem;
+    	font-weight:700;
+    	text-decoration: none;
+    	padding: 1px;
+    	background-color: #000;
+    	color: #EDE627;
+        border-radius: 3px;
+        margin: 10px 5px 80px 15px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        flex: auto;
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+    nav li{
+        display: none;
+    }
+
+    nav{
+        background-color: none;
+    }
+
+    #author{
+        width: 70px;
+        height: 100px;
+        margin: 5px 40px 5px 20px;
+    }
+    header{
+        padding: 5px;
+    
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+	nav ul, footer {
+		flex-direction: column;
+        align-items: center;
+	}
+	nav ul li {
+        padding: 15px;
+        font-size: 1rem;
+	}
+    h2{
+        font-size: 1.1rem;
+    }
+    main{
+        display: block;
+    }
+
+    .card{
+        margin: 5px auto;
+        /* width: 90%; */
+        background-color: #ffffff;
+        box-shadow: none;   
+    }
+    .card img{
+        padding: 10px 80px 5px;
+    }
+
+    #head-tags{
+        font-size: 1rem;
+    }
+    
+    #sub-tags{
+        grid-template-columns: 1fr;
+    }
+
+    #sub-tags {
+        font-size: 1rem;
+    }
+
+    footer div span{
+        display: block;
+    }
+
+    .show li {
+        display: block;
+    }
+
+}
+
