@@ -117,17 +117,20 @@ filterButtons.forEach(button => {
     });
 });
 
-function displayCourses(filterValue = "all") {
+function displayCourses(filterValue = "ALL") {
     courseList.innerHTML = "";
 
     let filteredCourses = courses;
 
-    if (filterValue === "all") {
+    if (filterValue === "ALL") {
         filteredCourses = courses.filter(course => course.subject === filterValue);
     }
-	else{
-		filteredCourses = courses.filter(course => course.subject !== filterValue);
+	else if (filterValue === "WDD"){
+		filteredCourses = courses.filter(course => course.subject === filterValue);
 	}
+    else if(filterValue === "CSE"){
+        filteredCourses = courses.filter(course => course.subject === filterValue);
+    }
 
 	const totalCredits = filteredCourses.reduce((acc, course) => acc + course.credits, 0);
 
