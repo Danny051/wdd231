@@ -1,0 +1,21 @@
+{
+    "familyName": "Mallo",
+    "movedIn": "2024-06-11",
+    "numberOfFamilyMember":  3,
+    "isVisited": true,
+    "familyMembers": [
+        {
+            "name": "Mallo Samuel",
+            "Gender": "Male",
+            "birthDate": "1965-08-19"
+        },
+        {
+            "name": "Mallo Happy",
+            "Gender": "Female",
+            "birthDate": "1970-06-18"
+        }
+    ]
+
+
+
+}
