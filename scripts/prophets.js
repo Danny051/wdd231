@@ -3,7 +3,7 @@ const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophet
 
 
 // button elements
-const all = document.querySelector("#id");
+const all = document.querySelector("#all");
 const utah = document.querySelector("#utah");
 const nonus = document.querySelector("#nonus");
 const lifetime = document.querySelector("#lifetime");

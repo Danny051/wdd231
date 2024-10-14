@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+
+header{
+    background-color: #cbcbcb;
+    /* padding-bottom: ; */
+
+}
+
+
+nav a, a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+li{
+    list-style: none;
+}
+
+#active{
+    text-decoration: underline;
+}
+
+.logo img{
+    height: 50px;
+}
+.navbar{
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: 2fr 1fr .1fr;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px 100px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link{
+    transition: 0.5s ease;
+}
+
+.nav-link:hover{
+    color: #049cfc;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000000 ;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hero{
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #e0e0e0;
+    width: 90%;
+    border: 1px solid black;
+ 
+}
+
+
+
+.icon{
+    font-size: 30px;
+    /* margin-left: 10px; */
+}
+
+
+.hero-img{
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero-btn{
+    background-color: #cbcbcb;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 1100px;
+}
+
+
+/* section 1 styling */
+
+h2{
+    margin: 15px auto;
+    width: 85%;
+}
+.events-weather{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0 auto;
+    width: 85%;
+    gap: 20px;
+}
+
+.cards{
+    background-color: #cbcbcb;
+    height: 250px;
+    overflow: hidden;
+
+}
+
+h3{
+    background-color: #464646;
+    margin: 0;
+    padding: 5px;
+    color: #fff;
+    font-weight: 200;
+}
+
+#weather-forecast p{
+    font-size: 20px;
+    margin: 20px;
+}
+.weather-info div span{
+    font-size: 100px;
+    margin: 10px;
+}
+
+.cards div #weather-info p{
+    display: flex;
+}
+
+div .weather-info{
+    display: flex;
+}
+
+div .weather-info p{
+    margin: 7px 10px;
+}
+
+/* section 2 styling */
+.business-listings{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px auto;
+    width: 85%;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.business-card{
+    background-color: #cbcbcb;
+    height: 200px;
+    border-radius: 15px;
+}
+
+h4, h5{
+    text-align: center;
+    margin: 0;
+}
+
+h4{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+h5{
+    border-bottom: 1px #000000 solid;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+div .personal-details{
+    display: flex;
+    margin: 20px;
+}
+
+.business-img{
+    background-color: #404040;
+    width: 100px;
+    height: 100px;
+}
+
+div .personal-info{
+    margin-left: 10px;
+}
+
+div .personal-info p{
+    margin: 5px 5px;
+}
+
+footer{
+    background-color: #cbcbcb;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 120px;
+}
+
+.social-media > *, .contact-info > *, .footer-meta > *{
+    margin: 0 10px;
+}
+
+
+/* directory page */
+
+h1{
+    font-weight: 400;
+    margin: 30px 100px;
+}
+.directory-nav {
+    text-align: center;
+    margin: 30px;
+}
+
+.directory-nav button {
+    border: none;
+    border: 2px solid #049cfc;
+    background-color: #fff;
+    color: #049cfc;
+    font-size: 50px;
+    padding: 1px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.directory-nav button:hover{
+    background-color: #049dfc33;
+    
+}
+
+section a{
+    color: #049cfc;
+    text-decoration: underline;
+}
+
+.grid-view section {
+	background-color: #fff;
+    text-align: center;
+    padding: 20px 40px;
+    margin: 20px;
+    transition: transform 0.2s;
+    width: auto;
+    height: 250px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.659);
+    font-size: 20px;
+
+}
+
+.grid-view section >* {
+    padding: 5px;
+}
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid with min-width */
+    /* gap: 10px; */
+    margin: 30px auto;
+    width: 90%;
+}
+
+.grid-view section h4{
+    display: none;
+}
+
+.list-view section img{
+    display: none;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.list-view section {
+	display: grid;
+	grid-template-columns: 2fr 2fr  1fr 1fr;
+    justify-items: left;
+}
+
+.list-view section > * {
+	margin: 30px;
+}
+
+.list-view section:nth-child(odd) {
+	background-color: #049dfc33;
+}
+
+.list-view section h4{
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    } 
+
+    .hamburger.active .bar:nth-child(3){
+        transform:  translateY(-8px) rotate(-45deg);
+    } 
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 110px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #cbcbcb;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0; 
+    }
+
+    img{
+        height: 100px;
+    }
+
+    .navbar{
+        /* padding: 10px 20px; */
+        display: flex;
+        grid: 20px;
+        align-items: center;
+        padding: 5px 40px;
+    }
+    body{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .grid-view section{
+        height: 250px;
+        box-shadow: 0 10px 10px -10px  rgba(0, 0, 0, 0.659);
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: left;
+        padding: 5px;
+        gap: 15px;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .contact-info >*, .footer-meta>*{
+        padding: 2px;
+    }
+
+    .hero{
+        overflow: hidden;
+    }
+
+    .icon{
+        font-size: 50px;
+    }
+
+    
+
+}

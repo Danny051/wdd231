@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Apple Inc.",
+        "address": "1 Apple Park Way, Cupertino, CA 95014, USA",
+        "phone": "+1-800-275-2273",
+        "website": "https://www.apple.com",
+        "icon": "images/apple-logo.webp",
+        "membershipLevel": 3,
+        "description": "A multinational technology company that designs and sells consumer electronics, software, and online services."
+      },
+      {
+        "name": "Microsoft Corporation",
+        "address": "One Microsoft Way, Redmond, WA 98052, USA",
+        "phone": "+1-425-882-8080",
+        "website": "https://www.microsoft.com",
+        "icon": "images/microsoft-logo.webp",
+        "membershipLevel": 3,
+        "description": "A leading global software company that develops, manufactures, and licenses software, hardware, and services."
+      },
+      {
+        "name": "Google LLC",
+        "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
+        "phone": "+1-650-253-0000",
+        "website": "https://www.google.com",
+        "icon": "images/google-logo.webp",
+        "membershipLevel": 3,
+        "description": "An American multinational technology company that specializes in internet-related services and products."
+      },
+      {
+        "name": "Tesla, Inc.",
+        "address": "3500 Deer Creek Road, Palo Alto, CA 94304, USA",
+        "phone": "+1-650-681-5000",
+        "website": "https://www.tesla.com",
+        "icon": "images/tesla-logo.webp",
+        "membershipLevel": 2,
+        "description": "An electric vehicle and clean energy company, known for pioneering electric cars and energy storage."
+      },
+      {
+        "name": "Amazon.com, Inc.",
+        "address": "410 Terry Ave N, Seattle, WA 98109, USA",
+        "phone": "+1-888-280-4331",
+        "website": "https://www.amazon.com",
+        "icon": "images/amazon-logo.webp",
+        "membershipLevel": 3,
+        "description": "The world's largest online retailer, offering a variety of services including cloud computing and AI."
+      },
+      {
+        "name": "Meta Platforms, Inc.",
+        "address": "1 Hacker Way, Menlo Park, CA 94025, USA",
+        "phone": "+1-650-543-4800",
+        "website": "https://www.meta.com",
+        "icon": "images/meta-logo.webp",
+        "membershipLevel": 2,
+        "description": "A technology conglomerate that focuses on building social media platforms and virtual reality."
+      },
+      {
+        "name": "Samsung Electronics",
+        "address": "129 Samsung-ro, Suwon-si, Gyeonggi-do, South Korea",
+        "phone": "+82-2-2255-0114",
+        "website": "https://www.samsung.com",
+        "icon": "images/samsung-logo.webp",
+        "membershipLevel": 2,
+        "description": "A South Korean multinational electronics company, known for its smartphones, televisions, and appliances."
+      }
+    ]
+  }
+  

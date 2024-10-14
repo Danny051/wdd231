@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Daniel | Chamber of Commerce</title>
+    <meta name="author" content="Hassan Daniel">
+    <meta name="description" content="Chamber of Commerce">
+
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://danny051.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="url" content="https://danny051.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="favicon.ico">
+    <!-- ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gurmukhi:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar ">
+            <a href="index.html" class="logo"><img src="images/Black_logo.png" alt="logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" id="active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="directory.html" class="nav-link">Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Join</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Discover</a>
+                </li>
+            </ul>
+            <span class="icon">&#9728;</span>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <span class="icon">&#9728;</span> -->
+        <section class="hero">
+            <div  class="hero-img">
+                <p>Scalable, responsive hero image</p>
+            </div>
+            <button class="hero-btn">Keynote Tickets</button>
+        </section>
+
+        <h2>Home</h2>
+        <section class="events-weather">
+            <div class="cards" id="events">
+                <h3>Events</h3>
+            </div>
+            <div class="cards" id="current-weather">
+                <h3>Current Weather</h3>
+                <div class="weather-info">
+                    <div><span>&#9729;</span></div>
+                    <div>
+                        <p><strong>75°</strong>F</p>
+                        <p>Partly Cloudy</p>
+                        <p>High: 85°</p>
+                        <p>Low: 52°</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards" id="weather-forecast">
+                <h3>Weather Forecast</h3>
+                <p>Today: <strong>90°F</strong></p>
+                <p>Wednesday: <strong>89°F</strong></p>
+                <p>Thursday: <strong>68°F</strong></p>
+            </div>
+        </section>
+
+        <section class="business-listings">
+            <div class="business-card">
+                <div class="business-details">
+                    <h4>Business Name</h4>
+                    <h5>Business Tag Line</h5>
+                    <div class="personal-details">
+                        <div class="business-img"></div>
+                        <div class="personal-info">
+                            <p><strong>EMAIL: </strong>info@gmail.com</p>
+                            <p><strong>PHONE: </strong>800-555-1234</p>
+                            <p><strong>URL: </strong>mybusiness.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="business-card">
+                <div class="business-details">
+                    <h4>Business Name</h4>
+                    <h5>Business Tag Line</h5>
+                    <div class="personal-details">
+                        <div class="business-img"></div>
+                        <div class="personal-info">
+                            <p><strong>EMAIL: </strong>info@gmail.com</p>
+                            <p><strong>PHONE: </strong>800-555-1234</p>
+                            <p><strong>URL: </strong>mybusiness.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="business-card">
+                <div class="business-details">
+                    <h4>Business Name</h4>
+                    <h5>Business Tag Line</h5>
+                    <div class="personal-details">
+                        <div class="business-img"></div>
+                        <div class="personal-info">
+                            <p><strong>EMAIL: </strong>info@gmail.com</p>
+                            <p><strong>PHONE: </strong>800-555-1234</p>
+                            <p><strong>URL: </strong>mybusiness.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p><strong>Lagos Chamber of Commerce</strong></p>
+            <p>294, Egbeda-Idimu Road</p>
+            <p>Lagos, Nigeria</p>
+            <p>info@lagoscc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        
+        <div class="social-media">
+            <a href="#"><img src="images/youtube-fill.webp"  alt="youtube icon" width="60px"></a>
+            <a href="#"><img src="images/twitter-fill.webp" alt="twitter icon" width="60px"></a>
+            <a href="#"><img src="images/linkedin-box-fill.webp" alt="linkedin icon" width="60px"></a>
+        </div>
+
+        <div class="footer-meta">
+            <p>WDD231 Class Project</p>
+            <p>Hassan Daniel</p>
+            <p><span id="currentYear"></span> Lagos Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js" defer></script>
+</body>
+</html>
