@@ -349,8 +349,7 @@ section a{
 
     .navbar{
         /* padding: 10px 20px; */
-        display: flex;
-        grid: 20px;
+        display: flex; 
         align-items: center;
         padding: 5px 40px;
     }
@@ -369,7 +368,6 @@ section a{
 
     footer{
         flex-direction: column;
-        align-items: left;
         padding: 5px;
         gap: 15px;
         font-size: 25px;
